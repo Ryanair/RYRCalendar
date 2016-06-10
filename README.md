@@ -2,6 +2,9 @@
 
 RYRCalendar tries to bring a simple approach to implement a calendar in any iOS app using Swift 2.2
 
+<img src="Images/ryrcalendar_multiple_selection.png" width="300">
+<img src="Images/ryrcalendar_single_selection.png" width="300">
+
 ## Instalation
 Will support Cocoapods and Carthage - WIP
 

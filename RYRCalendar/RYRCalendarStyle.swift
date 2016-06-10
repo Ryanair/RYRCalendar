@@ -22,7 +22,7 @@ struct RYRCalendarStyle {
    var cellStyleEmpty = RYREmptyCellStyle(backgroundColor: UIColor.whiteColor())
    
    // Single selection cell style
-   var cellStyleSelected = RYRDayCellStyle(backgroundColor: UIColor.whiteColor(), backgroundImage: UIImage(named: "one_way_highlight"), textFont: UIFont(name: "Roboto-Regular", size: 16)!, textColor: UIColor.whiteColor())
+   var cellStyleSelected = RYRDayCellStyle(backgroundColor: UIColor.whiteColor(), backgroundImage: UIImage(named: "one_way_highlight"), backgroundImageContentMode: .ScaleToFill, textFont: UIFont(name: "Roboto-Regular", size: 16)!, textColor: UIColor.whiteColor())
    var cellStyleSelectedMultiple = RYRDayCellStyle(backgroundColor: UIColor.whiteColor(), backgroundImage: UIImage(named: "same_day_highlight"), backgroundImageContentMode: .ScaleToFill, textFont: UIFont(name: "Roboto-Regular", size: 16)!, textColor: UIColor.whiteColor())
    
    // Multiple selection cell styles
