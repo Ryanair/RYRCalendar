@@ -10,16 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   @IBOutlet weak var calendar: RYRCalendar!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
+      
       // Do any additional setup after loading the view, typically from a nib.
+      calendar.delegate = self
+      calendar.selectionType = .Multiple
+      calendar.totalMonthsFromNow = 6
+      calendar.update()
    }
-
-   override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
-   }
-
-
 }
 
+
+extension ViewController: RYRCalendarDelegate {
+   func calendarDidSelectMultipleDate(calendar: RYRCalendar, selectedStartDate startDate: NSDate, endDate: NSDate) {
+      print("Start: \(startDate) || End: \(endDate)")
+   }
+   func calendarDidSelectDate(calendar: RYRCalendar, selectedDate: NSDate) {
+      print(selectedDate)
+   }
+   
+   func isDateAvailableToSelect(date: NSDate) -> Bool {
+      return true
+   }
+   
+   func calendarDidScrollToMonth(calendar: RYRCalendar, monthDate: NSDate) {
+      print("Did scroll to date: \(monthDate)")
+   }
+}
