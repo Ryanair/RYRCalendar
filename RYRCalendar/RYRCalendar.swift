@@ -28,8 +28,7 @@ enum RYRCalendarSelectionType: Int {
 class RYRCalendar: UIView {
    
    // PUBLIC (API)
-   var style: RYRCalendarStyle = RYRCalendarStyle()
-   
+   var style: RYRCalendarStyle = RYRCalendarStyle() { didSet { update() } }
    weak var delegate: RYRCalendarDelegate?
    var selectionType: RYRCalendarSelectionType = .None
    var totalMonthsFromNow: Int = 1
@@ -73,7 +72,8 @@ class RYRCalendar: UIView {
    
    // MARK: Public
    func update() {
-      self.collectionView.reloadData()
+      headerView.style = style.calendarHeaderStyle
+      collectionView.reloadData()
    }
    
    // MARK: Private

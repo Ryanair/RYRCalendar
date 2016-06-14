@@ -19,10 +19,8 @@ class ViewController: UIViewController {
       calendar.delegate = self
       calendar.selectionType = .Multiple
       calendar.totalMonthsFromNow = 6
-      calendar.update()
       calendar.style = RYRCalendarStyle()
-      calendar.style.calendarHeaderStyle = RYRCalendarHeaderStyle(workDayFont: UIFont(name: "Arial", size: 15)!, workDayTextColor: UIColor.yellowColor(), weekendDayFont: UIFont(name: "Arial", size: 18)!, weekendDayTextColor: UIColor.orangeColor(), backgroundColor: UIColor.whiteColor())
-
+      calendar.update()
    }
 }
 
