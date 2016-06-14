@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1101BABB1D105DD800547E5F /* NSDateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1101BABA1D105DD800547E5F /* NSDateExtensionsTests.swift */; };
+		1101BABD1D105DFD00547E5F /* RYRCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1101BABC1D105DFD00547E5F /* RYRCalendarTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9DBFB31C2AFB3236ECF27E09 /* Pods_RYRCalendar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5078383DA19F7BB0D428A744 /* Pods_RYRCalendar_Example.framework */; };
 		ADA050C8291410756D5908F3 /* Pods_RYRCalendar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB755331466B2CFF7DF07DBA /* Pods_RYRCalendar_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1101BABA1D105DD800547E5F /* NSDateExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionsTests.swift; sourceTree = "<group>"; };
+		1101BABC1D105DFD00547E5F /* RYRCalendarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYRCalendarTests.swift; sourceTree = "<group>"; };
 		165D01931387BB584BA98393 /* Pods-RYRCalendar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYRCalendar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RYRCalendar_Tests/Pods-RYRCalendar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5078383DA19F7BB0D428A744 /* Pods_RYRCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYRCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B349434E727AFEB637C498 /* Pods-RYRCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYRCalendar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RYRCalendar_Tests/Pods-RYRCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -40,7 +43,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* RYRCalendar_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYRCalendar_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6F9DFE29DAF3FEAA143AC88F /* Pods-RYRCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYRCalendar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RYRCalendar_Example/Pods-RYRCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ACAB097B0414BBDC2A5E1268 /* Pods-RYRCalendar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RYRCalendar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RYRCalendar_Example/Pods-RYRCalendar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B2A66D6DBA0D93D135B5867E /* RYRCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RYRCalendar.podspec; path = ../RYRCalendar.podspec; sourceTree = "<group>"; };
@@ -135,7 +137,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				1101BABC1D105DFD00547E5F /* RYRCalendarTests.swift */,
+				1101BABA1D105DD800547E5F /* NSDateExtensionsTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -368,7 +371,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				1101BABB1D105DD800547E5F /* NSDateExtensionsTests.swift in Sources */,
+				1101BABD1D105DFD00547E5F /* RYRCalendarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

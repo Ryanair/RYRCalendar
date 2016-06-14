@@ -5,7 +5,8 @@ target 'RYRCalendar_Example' do
 
   target 'RYRCalendar_Tests' do
     inherit! :search_paths
-
+    
+    pod 'RYRCalendar', :path => '../'
     
   end
 end
