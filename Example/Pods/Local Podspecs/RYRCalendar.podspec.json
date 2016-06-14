@@ -1,0 +1,25 @@
+{
+  "name": "RYRCalendar",
+  "version": "0.1.0",
+  "summary": "A short description of RYRCalendar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RYRCalendar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Miquel, Aram": "miquela@ryanair.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RYRCalendar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RYRCalendar/Classes/**/*",
+  "resource_bundles": {
+    "RYRCalendar": "RYRCalendar/Assets/*"
+  }
+}

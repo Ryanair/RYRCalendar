@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E374F201B0A0F364431A2E32AE1649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		03B2112235C8CFF08041FAE4EA449EC8 /* RYRMonthHeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A05130245DCB7C4BACEC680210276D5 /* RYRMonthHeaderStyle.swift */; };
+		053E341D30A85B63AFBCE2CCDF37B20E /* RYREmptyCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B81D72E694B1D6ED881BC5E1235BA /* RYREmptyCellStyle.swift */; };
+		0E1C3FAF36173CAAB96C6F5AAC5A5FA6 /* RYRCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B9FF5937661C3F2C913FAD394FBB5C /* RYRCalendar-dummy.m */; };
+		209881E04708AEF4C193D5139A093320 /* Pods-RYRCalendar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EDF239692D527595ED109DEC5DB4C2F /* Pods-RYRCalendar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25523BF66FE2E4759DB53639E1876D49 /* RYRCalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1760B1EE1E1949602BBF7ACE27122C /* RYRCalendarStyle.swift */; };
+		2E65D74DEE283982CBBDFC8E4BA2EA2C /* RYRCalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5715896326DACC56C9686B0D4533E72 /* RYRCalendarFlowLayout.swift */; };
+		31AA40654BFE0ECE22FF9A8CBEC14704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B904257F72B84A55D71EA8511B2A798 /* Assets.xcassets */; };
+		48A26E66E98A793F47B2E94DD3B94F89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5A1C1513AA030321DDCBFBE964814228 /* Pods-RYRCalendar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6A3264347DB47F0479D66CA1CB7F3FA /* Pods-RYRCalendar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63136BE405D8644A01C3741267F4E84E /* RYRCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDFC9C7C23380248245A054E4CA195C /* RYRCalendar.swift */; };
+		654487699E481675857AF1B1A477A961 /* RYRCalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EBA352879A095ACA6F73E4871073FB /* RYRCalendarHeaderView.swift */; };
+		77AD38EEAC885FA1545E0A71DAFF2345 /* RYRCalendar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FEFF6CF1E6EAC1EDE537149F5F1EE34 /* RYRCalendar.bundle */; };
+		809B00351DC30CE18828BE1DA886A16C /* RYRDayCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4CB9ED1ED2E67EDF0728220732E930 /* RYRDayCellStyle.swift */; };
+		9BDF1416DA474AD89966029D914C09E2 /* Pods-RYRCalendar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11877450631DABF629872496CD360AA9 /* Pods-RYRCalendar_Example-dummy.m */; };
+		9D2287860EC8FC76FC2AAC9DD12F2F36 /* RYRMonthHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3901194A5F695D1407CC1E5D52265410 /* RYRMonthHeaderReusableView.swift */; };
+		AE0068623C84462221C064D33F0B0EEC /* RYRDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9910DE23C1FF587094F822568864D9 /* RYRDayCell.swift */; };
+		B169590259B27412B5279BE9C4049FB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BF217F3B528C1D657D5745DF3C94896A /* RYRCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A666DDEF347F3108C2483FF9DF45F75 /* RYRCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF3B2601DECB57EC7E6DB2F0D3E0988B /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9261F35DF198EA5A30EE313B1F91F01 /* NSDateExtensions.swift */; };
+		D9FEF0336798FFA550C5F3160D96590D /* RYREmptyDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE672377CE0A0739F48399AC91A1707 /* RYREmptyDayCell.swift */; };
+		EDEA14E46830440135017B63531F87D9 /* Pods-RYRCalendar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A11A339598767939EE253F08E5CDF8 /* Pods-RYRCalendar_Tests-dummy.m */; };
+		F1C30CCF6EFD59CB085FCFF058556BE9 /* RYRCalendarHeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524319777C81567E16A681F79DE1D76F /* RYRCalendarHeaderStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34182FBEA033FC7CF650D7B7EF772805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2757B608E6424E4B8F1A963A97833EAC;
+			remoteInfo = "RYRCalendar-RYRCalendar";
+		};
+		BFD80FB051D875EBFA74AE92D70F9367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B2302B3A1BD9F2B7E0CA3B15DAF1480;
+			remoteInfo = RYRCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044A1AAD51B380625680D834447F6627 /* RYRCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RYRCalendar.modulemap; sourceTree = "<group>"; };
+		0AE672377CE0A0739F48399AC91A1707 /* RYREmptyDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYREmptyDayCell.swift; sourceTree = "<group>"; };
+		11877450631DABF629872496CD360AA9 /* Pods-RYRCalendar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYRCalendar_Example-dummy.m"; sourceTree = "<group>"; };
+		12012B6FF16BE1D4653115230A41E143 /* Pods-RYRCalendar_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYRCalendar_Tests-resources.sh"; sourceTree = "<group>"; };
+		1661DDD7BD675E829E09BFEC3FC2AD65 /* Pods_RYRCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYRCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E37F7C8BF12722196E73DBAB0F49AB /* Pods-RYRCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYRCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2A9910DE23C1FF587094F822568864D9 /* RYRDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRDayCell.swift; sourceTree = "<group>"; };
+		2EDF239692D527595ED109DEC5DB4C2F /* Pods-RYRCalendar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYRCalendar_Tests-umbrella.h"; sourceTree = "<group>"; };
+		364CB164C0A2A68B97B6EED973A69593 /* Pods-RYRCalendar_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYRCalendar_Example-resources.sh"; sourceTree = "<group>"; };
+		3901194A5F695D1407CC1E5D52265410 /* RYRMonthHeaderReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRMonthHeaderReusableView.swift; sourceTree = "<group>"; };
+		3A05130245DCB7C4BACEC680210276D5 /* RYRMonthHeaderStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRMonthHeaderStyle.swift; sourceTree = "<group>"; };
+		48D6575EC5A2F4CF70784E808854A85C /* Pods-RYRCalendar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RYRCalendar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A666DDEF347F3108C2483FF9DF45F75 /* RYRCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYRCalendar-umbrella.h"; sourceTree = "<group>"; };
+		4B044B564B109812BCCD0FF6DE07573B /* Pods-RYRCalendar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYRCalendar_Example-frameworks.sh"; sourceTree = "<group>"; };
+		50C752A3FC84BA1D5C2900D7C9E3F894 /* Pods-RYRCalendar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYRCalendar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		524319777C81567E16A681F79DE1D76F /* RYRCalendarHeaderStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRCalendarHeaderStyle.swift; sourceTree = "<group>"; };
+		58482587E61C8377FDE8A5339E2D6D2C /* Pods-RYRCalendar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RYRCalendar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EDFC9C7C23380248245A054E4CA195C /* RYRCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRCalendar.swift; sourceTree = "<group>"; };
+		6A2DC6173C4D58A5BC56A58E271824AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4CB9ED1ED2E67EDF0728220732E930 /* RYRDayCellStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRDayCellStyle.swift; sourceTree = "<group>"; };
+		726EE112F9DB998450D6C94F5B18EC8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FEFF6CF1E6EAC1EDE537149F5F1EE34 /* RYRCalendar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYRCalendar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0BF6DA6A1D3AE64C3EE9376C002692 /* Pods-RYRCalendar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYRCalendar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B904257F72B84A55D71EA8511B2A798 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C2E3B0D48CC468C30803B6BD1584FBF /* Pods-RYRCalendar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RYRCalendar_Example.modulemap"; sourceTree = "<group>"; };
+		8EFB89F5A46DBA2166EB553B9AF50BBD /* RYRCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RYRCalendar-prefix.pch"; sourceTree = "<group>"; };
+		9323E7380EEE191BECB58EC32404E2EC /* Pods-RYRCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYRCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B9FF5937661C3F2C913FAD394FBB5C /* RYRCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RYRCalendar-dummy.m"; sourceTree = "<group>"; };
+		9D92281DD1D972F315ED82712269B657 /* Pods-RYRCalendar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RYRCalendar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9E8B3716E26E28D2EACCD428F03C2907 /* Pods-RYRCalendar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RYRCalendar_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A05116E5D4353DB1CE7962D1AB08A686 /* Pods_RYRCalendar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RYRCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA560049975699AE95FE755037ECCA26 /* Pods-RYRCalendar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RYRCalendar_Tests.modulemap"; sourceTree = "<group>"; };
+		B9261F35DF198EA5A30EE313B1F91F01 /* NSDateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSDateExtensions.swift; sourceTree = "<group>"; };
+		BF8421E6ECD83EE5B2B7C72017C48B9D /* Pods-RYRCalendar_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RYRCalendar_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C1EBA352879A095ACA6F73E4871073FB /* RYRCalendarHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRCalendarHeaderView.swift; sourceTree = "<group>"; };
+		C5715896326DACC56C9686B0D4533E72 /* RYRCalendarFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRCalendarFlowLayout.swift; sourceTree = "<group>"; };
+		C6A3264347DB47F0479D66CA1CB7F3FA /* Pods-RYRCalendar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RYRCalendar_Example-umbrella.h"; sourceTree = "<group>"; };
+		CDA03175ED853C0EF27C2E00CF39C8B4 /* RYRCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RYRCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DE1760B1EE1E1949602BBF7ACE27122C /* RYRCalendarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYRCalendarStyle.swift; sourceTree = "<group>"; };
+		E4A11A339598767939EE253F08E5CDF8 /* Pods-RYRCalendar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RYRCalendar_Tests-dummy.m"; sourceTree = "<group>"; };
+		E61B81D72E694B1D6ED881BC5E1235BA /* RYREmptyCellStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RYREmptyCellStyle.swift; sourceTree = "<group>"; };
+		E61EDCAFA64C62B75BB8DFB0C69FE38D /* RYRCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RYRCalendar.xcconfig; sourceTree = "<group>"; };
+		ED4C80427B749B14F1B05F3EFB1ECDD0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE12CC67EFC6D7AD8501E604BE0A2FF /* ResourceBundle-RYRCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-RYRCalendar-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B14AEA18555FD6A71E79849F019C429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B169590259B27412B5279BE9C4049FB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		876AE6D14F8163F41AB805ACCC6F29EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D650726ACB29917DF25DBCF257FE4D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E374F201B0A0F364431A2E32AE1649 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD716E10ED419D7B96ECFBC8B29F1DCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A26E66E98A793F47B2E94DD3B94F89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1286A82B57835F475111AAC2EFFA8F5F /* RYRCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				8A85E5666618E951A6BFC6863DDBF359 /* Resources */,
+				4CA30D713D687282B7AA003371E05D94 /* RYRCalendar */,
+				210F9FBEDE3E4CA269094EE9A1BD04E9 /* Support Files */,
+			);
+			name = RYRCalendar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		210F9FBEDE3E4CA269094EE9A1BD04E9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED4C80427B749B14F1B05F3EFB1ECDD0 /* Info.plist */,
+				FCE12CC67EFC6D7AD8501E604BE0A2FF /* ResourceBundle-RYRCalendar-Info.plist */,
+				044A1AAD51B380625680D834447F6627 /* RYRCalendar.modulemap */,
+				E61EDCAFA64C62B75BB8DFB0C69FE38D /* RYRCalendar.xcconfig */,
+				94B9FF5937661C3F2C913FAD394FBB5C /* RYRCalendar-dummy.m */,
+				8EFB89F5A46DBA2166EB553B9AF50BBD /* RYRCalendar-prefix.pch */,
+				4A666DDEF347F3108C2483FF9DF45F75 /* RYRCalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RYRCalendar";
+			sourceTree = "<group>";
+		};
+		37F0DC26249E0995FA17A7DA489ABC49 /* Pods-RYRCalendar_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A2DC6173C4D58A5BC56A58E271824AA /* Info.plist */,
+				AA560049975699AE95FE755037ECCA26 /* Pods-RYRCalendar_Tests.modulemap */,
+				48D6575EC5A2F4CF70784E808854A85C /* Pods-RYRCalendar_Tests-acknowledgements.markdown */,
+				9D92281DD1D972F315ED82712269B657 /* Pods-RYRCalendar_Tests-acknowledgements.plist */,
+				E4A11A339598767939EE253F08E5CDF8 /* Pods-RYRCalendar_Tests-dummy.m */,
+				BF8421E6ECD83EE5B2B7C72017C48B9D /* Pods-RYRCalendar_Tests-frameworks.sh */,
+				12012B6FF16BE1D4653115230A41E143 /* Pods-RYRCalendar_Tests-resources.sh */,
+				2EDF239692D527595ED109DEC5DB4C2F /* Pods-RYRCalendar_Tests-umbrella.h */,
+				50C752A3FC84BA1D5C2900D7C9E3F894 /* Pods-RYRCalendar_Tests.debug.xcconfig */,
+				21E37F7C8BF12722196E73DBAB0F49AB /* Pods-RYRCalendar_Tests.release.xcconfig */,
+			);
+			name = "Pods-RYRCalendar_Tests";
+			path = "Target Support Files/Pods-RYRCalendar_Tests";
+			sourceTree = "<group>";
+		};
+		3AB4390D048CFFE16ABBA69A4BC870B4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8B904257F72B84A55D71EA8511B2A798 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		481AA1D1CA639AAF3FADE80A2FFD1E60 /* Pods-RYRCalendar_Example */ = {
+			isa = PBXGroup;
+			children = (
+				726EE112F9DB998450D6C94F5B18EC8A /* Info.plist */,
+				8C2E3B0D48CC468C30803B6BD1584FBF /* Pods-RYRCalendar_Example.modulemap */,
+				58482587E61C8377FDE8A5339E2D6D2C /* Pods-RYRCalendar_Example-acknowledgements.markdown */,
+				8B0BF6DA6A1D3AE64C3EE9376C002692 /* Pods-RYRCalendar_Example-acknowledgements.plist */,
+				11877450631DABF629872496CD360AA9 /* Pods-RYRCalendar_Example-dummy.m */,
+				4B044B564B109812BCCD0FF6DE07573B /* Pods-RYRCalendar_Example-frameworks.sh */,
+				364CB164C0A2A68B97B6EED973A69593 /* Pods-RYRCalendar_Example-resources.sh */,
+				C6A3264347DB47F0479D66CA1CB7F3FA /* Pods-RYRCalendar_Example-umbrella.h */,
+				9E8B3716E26E28D2EACCD428F03C2907 /* Pods-RYRCalendar_Example.debug.xcconfig */,
+				9323E7380EEE191BECB58EC32404E2EC /* Pods-RYRCalendar_Example.release.xcconfig */,
+			);
+			name = "Pods-RYRCalendar_Example";
+			path = "Target Support Files/Pods-RYRCalendar_Example";
+			sourceTree = "<group>";
+		};
+		4CA30D713D687282B7AA003371E05D94 /* RYRCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				89B6515E3410E09D1F29BB28EC0CB838 /* Classes */,
+			);
+			path = RYRCalendar;
+			sourceTree = "<group>";
+		};
+		51362E68B85DBD69C8F1729EBDD2CC04 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1286A82B57835F475111AAC2EFFA8F5F /* RYRCalendar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6FA2979AF9EBA5675CAD15EF81A8C11B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				481AA1D1CA639AAF3FADE80A2FFD1E60 /* Pods-RYRCalendar_Example */,
+				37F0DC26249E0995FA17A7DA489ABC49 /* Pods-RYRCalendar_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				51362E68B85DBD69C8F1729EBDD2CC04 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D368CFA1E800BC8B5BBED6A848C0734D /* Products */,
+				6FA2979AF9EBA5675CAD15EF81A8C11B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89B6515E3410E09D1F29BB28EC0CB838 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B9261F35DF198EA5A30EE313B1F91F01 /* NSDateExtensions.swift */,
+				5EDFC9C7C23380248245A054E4CA195C /* RYRCalendar.swift */,
+				C5715896326DACC56C9686B0D4533E72 /* RYRCalendarFlowLayout.swift */,
+				524319777C81567E16A681F79DE1D76F /* RYRCalendarHeaderStyle.swift */,
+				C1EBA352879A095ACA6F73E4871073FB /* RYRCalendarHeaderView.swift */,
+				DE1760B1EE1E1949602BBF7ACE27122C /* RYRCalendarStyle.swift */,
+				2A9910DE23C1FF587094F822568864D9 /* RYRDayCell.swift */,
+				6E4CB9ED1ED2E67EDF0728220732E930 /* RYRDayCellStyle.swift */,
+				E61B81D72E694B1D6ED881BC5E1235BA /* RYREmptyCellStyle.swift */,
+				0AE672377CE0A0739F48399AC91A1707 /* RYREmptyDayCell.swift */,
+				3901194A5F695D1407CC1E5D52265410 /* RYRMonthHeaderReusableView.swift */,
+				3A05130245DCB7C4BACEC680210276D5 /* RYRMonthHeaderStyle.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A85E5666618E951A6BFC6863DDBF359 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A02033A779FC809EDC3E435AEE24DD55 /* RYRCalendar */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A02033A779FC809EDC3E435AEE24DD55 /* RYRCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				3AB4390D048CFFE16ABBA69A4BC870B4 /* Assets */,
+			);
+			path = RYRCalendar;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D368CFA1E800BC8B5BBED6A848C0734D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1661DDD7BD675E829E09BFEC3FC2AD65 /* Pods_RYRCalendar_Example.framework */,
+				A05116E5D4353DB1CE7962D1AB08A686 /* Pods_RYRCalendar_Tests.framework */,
+				7FEFF6CF1E6EAC1EDE537149F5F1EE34 /* RYRCalendar.bundle */,
+				CDA03175ED853C0EF27C2E00CF39C8B4 /* RYRCalendar.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		76E1368488A6BCDD57592A4A2FA665D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1C1513AA030321DDCBFBE964814228 /* Pods-RYRCalendar_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F70D97AB8C9E35805731FD37E84F6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209881E04708AEF4C193D5139A093320 /* Pods-RYRCalendar_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE66B729C8220E609A8E2F41D0DE7838 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF217F3B528C1D657D5745DF3C94896A /* RYRCalendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2757B608E6424E4B8F1A963A97833EAC /* RYRCalendar-RYRCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3ABD9FFA24E73637D509EC56D55EBA /* Build configuration list for PBXNativeTarget "RYRCalendar-RYRCalendar" */;
+			buildPhases = (
+				62DEDEC18794C4841DCCEBFEBA93DECE /* Sources */,
+				876AE6D14F8163F41AB805ACCC6F29EC /* Frameworks */,
+				B818976960F59DFD0D07AE29C45E0FF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RYRCalendar-RYRCalendar";
+			productName = "RYRCalendar-RYRCalendar";
+			productReference = 7FEFF6CF1E6EAC1EDE537149F5F1EE34 /* RYRCalendar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4B2302B3A1BD9F2B7E0CA3B15DAF1480 /* RYRCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B987E5E6E700199CFCA9F08F69A50474 /* Build configuration list for PBXNativeTarget "RYRCalendar" */;
+			buildPhases = (
+				38558E060376734F0813ABFBDF2D7E87 /* Sources */,
+				D650726ACB29917DF25DBCF257FE4D5D /* Frameworks */,
+				81FADF19D7FD0F0F60BE5178903DD29C /* Resources */,
+				DE66B729C8220E609A8E2F41D0DE7838 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				762596710C7BD9326D6677BE5D2964BA /* PBXTargetDependency */,
+			);
+			name = RYRCalendar;
+			productName = RYRCalendar;
+			productReference = CDA03175ED853C0EF27C2E00CF39C8B4 /* RYRCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		72FC940DE5CF4608A79528CA16604325 /* Pods-RYRCalendar_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 819108EE74147AE4BEB07B627B8DC242 /* Build configuration list for PBXNativeTarget "Pods-RYRCalendar_Tests" */;
+			buildPhases = (
+				66143A9CAD12F24E5B9EE0BEAEF5B79B /* Sources */,
+				FD716E10ED419D7B96ECFBC8B29F1DCE /* Frameworks */,
+				B1F70D97AB8C9E35805731FD37E84F6E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RYRCalendar_Tests";
+			productName = "Pods-RYRCalendar_Tests";
+			productReference = A05116E5D4353DB1CE7962D1AB08A686 /* Pods_RYRCalendar_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC6C29098A4B93EFB3E4D0F8B91CF5E5 /* Pods-RYRCalendar_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 391DB17078758601DF06692EBACF73AD /* Build configuration list for PBXNativeTarget "Pods-RYRCalendar_Example" */;
+			buildPhases = (
+				977FE8852FB0E860CDED1B8E1CCE9F3D /* Sources */,
+				4B14AEA18555FD6A71E79849F019C429 /* Frameworks */,
+				76E1368488A6BCDD57592A4A2FA665D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89D062AC4BAFC058C3A592A35D22F234 /* PBXTargetDependency */,
+			);
+			name = "Pods-RYRCalendar_Example";
+			productName = "Pods-RYRCalendar_Example";
+			productReference = 1661DDD7BD675E829E09BFEC3FC2AD65 /* Pods_RYRCalendar_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D368CFA1E800BC8B5BBED6A848C0734D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC6C29098A4B93EFB3E4D0F8B91CF5E5 /* Pods-RYRCalendar_Example */,
+				72FC940DE5CF4608A79528CA16604325 /* Pods-RYRCalendar_Tests */,
+				4B2302B3A1BD9F2B7E0CA3B15DAF1480 /* RYRCalendar */,
+				2757B608E6424E4B8F1A963A97833EAC /* RYRCalendar-RYRCalendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81FADF19D7FD0F0F60BE5178903DD29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AD38EEAC885FA1545E0A71DAFF2345 /* RYRCalendar.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B818976960F59DFD0D07AE29C45E0FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AA40654BFE0ECE22FF9A8CBEC14704 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38558E060376734F0813ABFBDF2D7E87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3B2601DECB57EC7E6DB2F0D3E0988B /* NSDateExtensions.swift in Sources */,
+				0E1C3FAF36173CAAB96C6F5AAC5A5FA6 /* RYRCalendar-dummy.m in Sources */,
+				63136BE405D8644A01C3741267F4E84E /* RYRCalendar.swift in Sources */,
+				2E65D74DEE283982CBBDFC8E4BA2EA2C /* RYRCalendarFlowLayout.swift in Sources */,
+				F1C30CCF6EFD59CB085FCFF058556BE9 /* RYRCalendarHeaderStyle.swift in Sources */,
+				654487699E481675857AF1B1A477A961 /* RYRCalendarHeaderView.swift in Sources */,
+				25523BF66FE2E4759DB53639E1876D49 /* RYRCalendarStyle.swift in Sources */,
+				AE0068623C84462221C064D33F0B0EEC /* RYRDayCell.swift in Sources */,
+				809B00351DC30CE18828BE1DA886A16C /* RYRDayCellStyle.swift in Sources */,
+				053E341D30A85B63AFBCE2CCDF37B20E /* RYREmptyCellStyle.swift in Sources */,
+				D9FEF0336798FFA550C5F3160D96590D /* RYREmptyDayCell.swift in Sources */,
+				9D2287860EC8FC76FC2AAC9DD12F2F36 /* RYRMonthHeaderReusableView.swift in Sources */,
+				03B2112235C8CFF08041FAE4EA449EC8 /* RYRMonthHeaderStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62DEDEC18794C4841DCCEBFEBA93DECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66143A9CAD12F24E5B9EE0BEAEF5B79B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEA14E46830440135017B63531F87D9 /* Pods-RYRCalendar_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		977FE8852FB0E860CDED1B8E1CCE9F3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDF1416DA474AD89966029D914C09E2 /* Pods-RYRCalendar_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		762596710C7BD9326D6677BE5D2964BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RYRCalendar-RYRCalendar";
+			target = 2757B608E6424E4B8F1A963A97833EAC /* RYRCalendar-RYRCalendar */;
+			targetProxy = 34182FBEA033FC7CF650D7B7EF772805 /* PBXContainerItemProxy */;
+		};
+		89D062AC4BAFC058C3A592A35D22F234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RYRCalendar;
+			target = 4B2302B3A1BD9F2B7E0CA3B15DAF1480 /* RYRCalendar */;
+			targetProxy = BFD80FB051D875EBFA74AE92D70F9367 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		100A12652907E1862C9EE6742590C399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8B3716E26E28D2EACCD428F03C2907 /* Pods-RYRCalendar_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RYRCalendar_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RYRCalendar_Example/Pods-RYRCalendar_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RYRCalendar_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		186951C3291DE0B78A9F5EE5F7495011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61EDCAFA64C62B75BB8DFB0C69FE38D /* RYRCalendar.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/RYRCalendar";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/RYRCalendar/ResourceBundle-RYRCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = RYRCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		246F6AB51BD8DECDE94D230BC9C232D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61EDCAFA64C62B75BB8DFB0C69FE38D /* RYRCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RYRCalendar/RYRCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RYRCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RYRCalendar/RYRCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RYRCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39773C595C6A231BC57D3977B1AAADA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C752A3FC84BA1D5C2900D7C9E3F894 /* Pods-RYRCalendar_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RYRCalendar_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RYRCalendar_Tests/Pods-RYRCalendar_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RYRCalendar_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4966D5C9D37D89301ABBDA023574D33D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9323E7380EEE191BECB58EC32404E2EC /* Pods-RYRCalendar_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RYRCalendar_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RYRCalendar_Example/Pods-RYRCalendar_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RYRCalendar_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F91102D9EF3C430477A604972299D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61EDCAFA64C62B75BB8DFB0C69FE38D /* RYRCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RYRCalendar/RYRCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RYRCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RYRCalendar/RYRCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RYRCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		532911119558044829072DF08F80CEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61EDCAFA64C62B75BB8DFB0C69FE38D /* RYRCalendar.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/RYRCalendar";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/RYRCalendar/ResourceBundle-RYRCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = RYRCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		91B64738BC8BEFCC17B437FFC1047F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E37F7C8BF12722196E73DBAB0F49AB /* Pods-RYRCalendar_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RYRCalendar_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RYRCalendar_Tests/Pods-RYRCalendar_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RYRCalendar_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		391DB17078758601DF06692EBACF73AD /* Build configuration list for PBXNativeTarget "Pods-RYRCalendar_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100A12652907E1862C9EE6742590C399 /* Debug */,
+				4966D5C9D37D89301ABBDA023574D33D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		819108EE74147AE4BEB07B627B8DC242 /* Build configuration list for PBXNativeTarget "Pods-RYRCalendar_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39773C595C6A231BC57D3977B1AAADA3 /* Debug */,
+				91B64738BC8BEFCC17B437FFC1047F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E3ABD9FFA24E73637D509EC56D55EBA /* Build configuration list for PBXNativeTarget "RYRCalendar-RYRCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				532911119558044829072DF08F80CEFD /* Debug */,
+				186951C3291DE0B78A9F5EE5F7495011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B987E5E6E700199CFCA9F08F69A50474 /* Build configuration list for PBXNativeTarget "RYRCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246F6AB51BD8DECDE94D230BC9C232D3 /* Debug */,
+				4F91102D9EF3C430477A604972299D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

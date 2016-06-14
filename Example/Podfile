@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RYRCalendar_Example' do
+  pod 'RYRCalendar', :path => '../'
+
+  target 'RYRCalendar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
