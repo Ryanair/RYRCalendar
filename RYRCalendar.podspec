@@ -14,7 +14,7 @@ s.homepage         = 'https://github.com/Ryanair/RYRCalendar'
 s.screenshots      = 'https://github.com/Ryanair/RYRCalendar/raw/master/Images/ryrcalendar_multiple_selection.png', 'https://github.com/Ryanair/RYRCalendar/raw/master/Images/ryrcalendar_single_selection.png'
 s.license          = { :type => 'Apache', :file => 'LICENSE' }
 s.author           = { 'Miquel, Aram' => 'miquela@ryanair.com' }
-s.source           = { :git => 'https://github.com/Ryanair/RYRCalendar.git', :branch => 'master' }
+s.source           = { :git => 'https://github.com/Ryanair/RYRCalendar.git', :tag => 'v0.1.0' }
 s.ios.deployment_target = '8.0'
 s.source_files     = 'RYRCalendar/Classes/**/*'
 s.resource_bundle  = { 'RYRCalendar' => 'RYRCalendar/Assets/*' }
