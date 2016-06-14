@@ -12,7 +12,6 @@
 		118CF8631CFF0101005563CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118CF8611CFF0101005563CA /* Main.storyboard */; };
 		118CF8651CFF0101005563CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118CF8641CFF0101005563CA /* Assets.xcassets */; };
 		118CF8681CFF0101005563CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118CF8661CFF0101005563CA /* LaunchScreen.storyboard */; };
-		118CF8731CFF0101005563CA /* RYRCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF8721CFF0101005563CA /* RYRCalendarTests.swift */; };
 		118CF87E1CFF0101005563CA /* RYRCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF87D1CFF0101005563CA /* RYRCalendarUITests.swift */; };
 		118CF88D1CFF1909005563CA /* RYRCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF88C1CFF1909005563CA /* RYRCalendar.swift */; };
 		118CF88F1CFF3089005563CA /* RYRDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118CF88E1CFF3089005563CA /* RYRDayCell.swift */; };
@@ -26,6 +25,9 @@
 		11A6D4381D07063E00040814 /* RYRMonthHeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D4371D07063E00040814 /* RYRMonthHeaderStyle.swift */; };
 		11A6D43A1D07085300040814 /* RYRCalendarHeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D4391D07085300040814 /* RYRCalendarHeaderStyle.swift */; };
 		11A6D43C1D070AA700040814 /* RYREmptyCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D43B1D070AA700040814 /* RYREmptyCellStyle.swift */; };
+		11A88D1B1D0F169C00D2CE30 /* NSDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A88D1A1D0F169C00D2CE30 /* NSDateExtensions.swift */; };
+		11A88D1D1D0F19B700D2CE30 /* RYRCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A88D1C1D0F19B700D2CE30 /* RYRCalendarTests.swift */; };
+		11A88D1F1D0F19CE00D2CE30 /* NSDateExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A88D1E1D0F19CE00D2CE30 /* NSDateExtensionsTests.swift */; };
 		11B8150E1D0173400045957F /* RYRCalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8150D1D0173400045957F /* RYRCalendarFlowLayout.swift */; };
 		11B815101D017E030045957F /* RYREmptyDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B8150F1D017E030045957F /* RYREmptyDayCell.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +58,6 @@
 		118CF8671CFF0101005563CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		118CF8691CFF0101005563CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		118CF86E1CFF0101005563CA /* RYRCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYRCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		118CF8721CFF0101005563CA /* RYRCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYRCalendarTests.swift; sourceTree = "<group>"; };
 		118CF8741CFF0101005563CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		118CF8791CFF0101005563CA /* RYRCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RYRCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		118CF87D1CFF0101005563CA /* RYRCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RYRCalendarUITests.swift; sourceTree = "<group>"; };
@@ -73,6 +74,9 @@
 		11A6D4371D07063E00040814 /* RYRMonthHeaderStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYRMonthHeaderStyle.swift; sourceTree = "<group>"; };
 		11A6D4391D07085300040814 /* RYRCalendarHeaderStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYRCalendarHeaderStyle.swift; sourceTree = "<group>"; };
 		11A6D43B1D070AA700040814 /* RYREmptyCellStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYREmptyCellStyle.swift; sourceTree = "<group>"; };
+		11A88D1A1D0F169C00D2CE30 /* NSDateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensions.swift; sourceTree = "<group>"; };
+		11A88D1C1D0F19B700D2CE30 /* RYRCalendarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYRCalendarTests.swift; sourceTree = "<group>"; };
+		11A88D1E1D0F19CE00D2CE30 /* NSDateExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionsTests.swift; sourceTree = "<group>"; };
 		11B8150D1D0173400045957F /* RYRCalendarFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYRCalendarFlowLayout.swift; sourceTree = "<group>"; };
 		11B8150F1D017E030045957F /* RYREmptyDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RYREmptyDayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,8 +144,9 @@
 		118CF8711CFF0101005563CA /* RYRCalendarTests */ = {
 			isa = PBXGroup;
 			children = (
-				118CF8721CFF0101005563CA /* RYRCalendarTests.swift */,
 				118CF8741CFF0101005563CA /* Info.plist */,
+				11A88D1C1D0F19B700D2CE30 /* RYRCalendarTests.swift */,
+				11A88D1E1D0F19CE00D2CE30 /* NSDateExtensionsTests.swift */,
 			);
 			path = RYRCalendarTests;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				11A6D4331D0705E900040814 /* FlowLayout */,
 				11A6D4321D0705BD00040814 /* Headers */,
 				11A6D4311D0705A000040814 /* Cells */,
+				11A88D191D0F166800D2CE30 /* Extensions */,
 			);
 			name = RYRCalendar;
 			sourceTree = "<group>";
@@ -213,6 +219,14 @@
 				11A6D43B1D070AA700040814 /* RYREmptyCellStyle.swift */,
 			);
 			name = Styles;
+			sourceTree = "<group>";
+		};
+		11A88D191D0F166800D2CE30 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11A88D1A1D0F169C00D2CE30 /* NSDateExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +371,7 @@
 				11B815101D017E030045957F /* RYREmptyDayCell.swift in Sources */,
 				119E110C1D003CDF00148296 /* RYRMonthHeaderReusableView.swift in Sources */,
 				11A6D4301D07058100040814 /* RYRCalendarStyle.swift in Sources */,
+				11A88D1B1D0F169C00D2CE30 /* NSDateExtensions.swift in Sources */,
 				118CF88D1CFF1909005563CA /* RYRCalendar.swift in Sources */,
 				11A6D43A1D07085300040814 /* RYRCalendarHeaderStyle.swift in Sources */,
 				11B8150E1D0173400045957F /* RYRCalendarFlowLayout.swift in Sources */,
@@ -369,7 +384,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				118CF8731CFF0101005563CA /* RYRCalendarTests.swift in Sources */,
+				11A88D1F1D0F19CE00D2CE30 /* NSDateExtensionsTests.swift in Sources */,
+				11A88D1D1D0F19B700D2CE30 /* RYRCalendarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,10 +545,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RYRCalendarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ryanair.RYRCalendarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RYRCalendar.app/RYRCalendar";
 			};
 			name = Debug;
@@ -541,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RYRCalendarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ryanair.RYRCalendarTests;

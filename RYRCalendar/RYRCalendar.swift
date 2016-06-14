@@ -112,7 +112,7 @@ class RYRCalendar: UIView {
    }
    
    private func getBlankSpaces(fromDate: NSDate?) -> Int {
-      if let firstDayOfMonth = fromDate?.firstDayOfMonth() {
+      if let firstDayOfMonth = fromDate?.setToFirstDayOfMonth() {
          
          let components = NSCalendar.currentCalendar().components([.Weekday], fromDate: firstDayOfMonth)
          
@@ -204,32 +204,32 @@ class RYRCalendar: UIView {
    private func dateFromIndexPath(indexPath: NSIndexPath?) -> NSDate? {
       guard let indexPath = indexPath else { return nil }
       
-      let monthDate = baseDate.datePlusMonths(indexPath.section)?.firstDayOfMonth()
+      let monthDate = baseDate.dateByAddingMonths(indexPath.section)?.setToFirstDayOfMonth()
       let blankSpaces = getBlankSpaces(monthDate)
-      return monthDate?.datePlusDays(indexPath.row - blankSpaces)
+      return monthDate?.dateByAddingDays(indexPath.row - blankSpaces)
    }
 }
 
 // MARK: CollectionView DataSource
 extension RYRCalendar: UICollectionViewDataSource {
    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      let dateForSection = baseDate.datePlusMonths(section)
-      var numberOfItems = dateForSection?.daysInMonth() ?? 0
+      let dateForSection = baseDate.dateByAddingMonths(section)
+      var numberOfItems = dateForSection?.numberOfDaysInCurrentMonth() ?? 0
       numberOfItems += getBlankSpaces(dateForSection) ?? 0
       
       return numberOfItems
    }
    
    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-      let dateForSection = baseDate.datePlusMonths(indexPath.section)?.firstDayOfMonth()
+      let dateForSection = baseDate.dateByAddingMonths(indexPath.section)?.setToFirstDayOfMonth()
       let blankSpaces = getBlankSpaces(dateForSection)
       
       if indexPath.row >= blankSpaces {
          let cell = collectionView.dequeueReusableCellWithReuseIdentifier(RYRDayCell.cellIndentifier, forIndexPath: indexPath) as! RYRDayCell
          cell.dayNumber = indexPath.row - blankSpaces + 1
 
-         if let rowDate = dateForSection?.datePlusDays(indexPath.row - blankSpaces) {
-            if rowDate.isPastDay(baseDate) {
+         if let rowDate = dateForSection?.dateByAddingDays(indexPath.row - blankSpaces) {
+            if rowDate.isPastDay() {
                cell.style = style.cellStyleDisabled
             } else if indexPath == singleSelectionIndexPath {
                cell.style = style.cellStyleSelected
@@ -243,7 +243,7 @@ extension RYRCalendar: UICollectionViewDataSource {
                }
             } else if rowDate.isBetweenDates(dateFromIndexPath(multipleSelectionIndexPaths.first), secondDate: dateFromIndexPath(multipleSelectionIndexPaths.last)) {
                cell.style = style.cellStyleMiddleSelected
-            }else if rowDate.isToday(baseDate) {
+            }else if rowDate.isToday() {
                cell.style = style.cellStyleToday
             } else if delegate?.isDateAvailableToSelect(rowDate) ?? true {
                cell.style = style.cellStyleEnabled
@@ -294,7 +294,7 @@ extension RYRCalendar: UICollectionViewDelegateFlowLayout {
    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
       if kind == UICollectionElementKindSectionHeader {
          let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: RYRMonthHeaderReusableView.identifier, forIndexPath: indexPath) as! RYRMonthHeaderReusableView
-         view.date = baseDate.firstDayOfMonth()!.datePlusMonths(indexPath.section)
+         view.date = baseDate.setToFirstDayOfMonth()!.dateByAddingMonths(indexPath.section)
          view.style = style.monthHeaderStyle
          return view
       }
@@ -319,63 +319,4 @@ extension RYRCalendar: UICollectionViewDelegateFlowLayout {
       return UIEdgeInsets(top: 0, left: lateralSpacing, bottom: 0, right: lateralSpacing)
    }
    
-}
-
-// MARK: Extension NSDate
-private extension NSDate {
-   func daysInMonth() -> Int {
-      return NSCalendar.currentCalendar().rangeOfUnit(.Day, inUnit: .Month, forDate: self).length
-   }
-   
-   func datePlusMonths(monthsToAdd: Int) -> NSDate? {
-      let calendar = NSCalendar.currentCalendar()
-      
-      if #available(iOS 8.0, *) {
-         return calendar.dateByAddingUnit(.Month, value: monthsToAdd, toDate: self, options: [])
-      } else {
-         let components = NSDateComponents()
-         components.month = monthsToAdd
-         return calendar.dateByAddingComponents(components, toDate: self, options: [])
-      }
-   }
-   
-   func firstDayOfMonth() -> NSDate? {
-      let calendar = NSCalendar.currentCalendar()
-      let components = calendar.components([NSCalendarUnit.Year, NSCalendarUnit.Month], fromDate: self)
-      return calendar.dateFromComponents(components)
-   }
-   
-   func datePlusDays(daysToAdd: Int) -> NSDate? {
-      if #available(iOS 8.0, *) {
-         return NSCalendar.currentCalendar().dateByAddingUnit(.Day, value: daysToAdd, toDate: self, options: [])
-      } else {
-         let components = NSDateComponents()
-         components.day = daysToAdd
-         return NSCalendar.currentCalendar().dateByAddingComponents(components, toDate: self, options: [])
-      }
-   }
-   
-   func isPastDay(baseDate: NSDate) -> Bool {
-      let calendar = NSCalendar.currentCalendar()
-      let components = calendar.components([.Year, .Day, .Month], fromDate: NSDate())
-      return compare(calendar.dateFromComponents(components)!) == .OrderedAscending
-   }
-   
-   func isToday(baseDate: NSDate) -> Bool {
-      if #available(iOS 8.0, *) {
-         return  NSCalendar.currentCalendar().isDateInToday(self)
-      } else {
-         let calendar = NSCalendar.currentCalendar()
-         let todayComponents = calendar.components([.Year, .Month, .Day], fromDate: NSDate())
-         let selfComponents = calendar.components([.Year, .Month, .Day], fromDate: self)
-         
-         return calendar.dateFromComponents(todayComponents)!.isEqualToDate(calendar.dateFromComponents(selfComponents)!)
-      }
-   }
-   
-   func isBetweenDates(firstDate: NSDate?, secondDate: NSDate?) -> Bool {
-      guard let firstDate = firstDate, secondDate = secondDate else { return false }
-      
-      return firstDate.compare(self) == self.compare(secondDate)
-   }
 }

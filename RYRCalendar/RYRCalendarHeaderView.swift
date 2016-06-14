@@ -39,37 +39,37 @@ class RYRCalendarHeaderView: UIView {
       components.day = 1
       mondayLabel = UILabel(frame: CGRectZero)
       mondayLabel.textAlignment = .Center
-      mondayLabel.text = components.date?.day
+      mondayLabel.text = components.date?.getDayNumberAsString()
       
       components.day += 1
       tuesdayLabel = UILabel(frame: CGRectZero)
       tuesdayLabel.textAlignment = .Center
-      tuesdayLabel.text = components.date?.day
+      tuesdayLabel.text = components.date?.getDayNumberAsString()
       
       components.day += 1
       wednesdayLabel = UILabel(frame: CGRectZero)
       wednesdayLabel.textAlignment = .Center
-      wednesdayLabel.text = components.date?.day
+      wednesdayLabel.text = components.date?.getDayNumberAsString()
       
       components.day += 1
       thursdayLabel = UILabel(frame: CGRectZero)
       thursdayLabel.textAlignment = .Center
-      thursdayLabel.text = components.date?.day
+      thursdayLabel.text = components.date?.getDayNumberAsString()
       
       components.day += 1
       fridayLabel = UILabel(frame: CGRectZero)
       fridayLabel.textAlignment = .Center
-      fridayLabel.text = components.date?.day
+      fridayLabel.text = components.date?.getDayNumberAsString()
       
       components.day += 1
       saturdayLabel = UILabel(frame: CGRectZero)
       saturdayLabel.textAlignment = .Center
-      saturdayLabel.text = components.date?.day
+      saturdayLabel.text = components.date?.getDayNumberAsString()
       
       components.day += 1
       sundayLabel = UILabel(frame: CGRectZero)
       sundayLabel.textAlignment = .Center
-      sundayLabel.text = components.date?.day
+      sundayLabel.text = components.date?.getDayNumberAsString()
       
       addSubview(mondayLabel)
       addSubview(tuesdayLabel)
@@ -116,14 +116,6 @@ class RYRCalendarHeaderView: UIView {
       sundayLabel.textColor = newStyle.weekendDayTextColor
       
       backgroundColor = newStyle.backgroundColor
-   }
-}
-
-private extension NSDate {
-   var day: String {
-      let dateFormatter = NSDateFormatter()
-      dateFormatter.dateFormat = "E"
-      return dateFormatter.stringFromDate(self)
    }
 }
 

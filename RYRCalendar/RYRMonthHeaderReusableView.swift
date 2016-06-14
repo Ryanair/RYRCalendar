@@ -39,27 +39,12 @@ class RYRMonthHeaderReusableView: UICollectionReusableView {
    }
    
    private func updateDate(date: NSDate) {
-      dateLabel.text = "\(date.month) \(date.year)"
+      dateLabel.text = "\(date.getMonthAsString()) \(date.getYearAsString())"
    }
    
    private func updateStyle(style: RYRMonthHeaderStyle) {
       backgroundColor = style.backgroundColor
       dateLabel.font = style.font
       dateLabel.textColor = style.textColor
-   }
-}
-
-
-private extension NSDate {
-   var month: String {
-      let dateFormatter = NSDateFormatter()
-      dateFormatter.dateFormat = "MMM"
-      return dateFormatter.stringFromDate(self)
-   }
-   
-   var year: String {
-      let dateFormatter = NSDateFormatter()
-      dateFormatter.dateFormat = "yyyy"
-      return dateFormatter.stringFromDate(self)
    }
 }
