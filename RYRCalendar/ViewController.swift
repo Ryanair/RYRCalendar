@@ -29,10 +29,16 @@ class ViewController: UIViewController {
 
 extension ViewController: RYRCalendarDelegate {
    func calendarDidSelectMultipleDate(calendar: RYRCalendar, selectedStartDate startDate: NSDate, endDate: NSDate) {
-      print("Start: \(startDate) || End: \(endDate)")
+      let formatter = NSDateFormatter()
+      formatter.dateFormat = "dd-MM-yyyy"
+      
+      print("Start: \(formatter.stringFromDate(startDate)) || End: \(formatter.stringFromDate(endDate))")
    }
    func calendarDidSelectDate(calendar: RYRCalendar, selectedDate: NSDate) {
-      print(selectedDate)
+      let formatter = NSDateFormatter()
+      formatter.dateFormat = "dd-MM-yyyy"
+      
+      print(formatter.stringFromDate(selectedDate))
    }
    
    func isDateAvailableToSelect(date: NSDate) -> Bool {
@@ -40,6 +46,9 @@ extension ViewController: RYRCalendarDelegate {
    }
    
    func calendarDidScrollToMonth(calendar: RYRCalendar, monthDate: NSDate) {
-      print("Did scroll to date: \(monthDate)")
+      let formatter = NSDateFormatter()
+      formatter.dateFormat = "dd-MM-yyyy"
+      
+      print("Did scroll to date: \(formatter.stringFromDate(monthDate))")
    }
 }

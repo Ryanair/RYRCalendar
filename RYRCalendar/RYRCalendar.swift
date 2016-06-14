@@ -111,14 +111,14 @@ class RYRCalendar: UIView {
       update()
    }
    
-   private func getBlankSpaces(fromDate: NSDate?) -> Int {
+   internal func getBlankSpaces(fromDate: NSDate?) -> Int {
       if let firstDayOfMonth = fromDate?.setToFirstDayOfMonth() {
          
          let components = NSCalendar.currentCalendar().components([.Weekday], fromDate: firstDayOfMonth)
          
-         let firstDayIndex = components.weekday - 2 //TODO: @Aram why this - 2 is necessary?
+         let blankSpaces = components.weekday - 2 // this '2' is because components.Weekday starts on Saturday, and starts with 1 (not 0)
          
-         return firstDayIndex
+         return blankSpaces
       }
       
       return 0
