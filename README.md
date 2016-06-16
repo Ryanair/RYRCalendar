@@ -1,12 +1,36 @@
 # RYRCalendar
 
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/RYRCalendar.svg)](https://img.shields.io/cocoapods/v/RYRCalendar.svg)
+
+
 RYRCalendar tries to bring a simple approach to implement a calendar in any iOS app using Swift 2.2
 
 <img src="Images/ryrcalendar_multiple_selection.png" width="300">
 <img src="Images/ryrcalendar_single_selection.png" width="300">
 
 ## Instalation
-Will support Cocoapods and Carthage - WIP
+
+### Cocoapods
+
+To integrate RYRCalendar into your Xcode project using Cocoapods, specify it in your `Podfile`:
+
+```
+target 'TargetName' do
+	pod 'RYRCalendar'
+end
+```
+### Carthage
+Work in progress!
+
+### Manually
+
+Download the `.zip` in your computer and import all the files contained in `RYRCalendar/RYRCalendar` to your project.
+
+
+```
+Note that with *Cocoapods* or *Carthage* the minimum required version will be iOS 8. 
+If you want to support iOS 7, just import the files manually to your project. 
+```
 
 ## Requirements
 Supports iOS 7 and up, written in Swift.
